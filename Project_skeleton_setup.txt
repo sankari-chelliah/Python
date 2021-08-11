@@ -1,0 +1,20 @@
+## Steps to create project skeleton in macOS
+
+# 1.Check if pip is installed
+$pip3.9 list. # it will show pip version and setuptools version
+
+# 2.Install virtualenv
+$sudo pip3.9 install virtualenv #give OS user pwd
+
+# 3.check the virtalenv
+$which virtualenv
+
+# 4.Install nose
+$pip3.9 install nose
+
+# 5.creating the skeleton project directory
+$ mkdir projects
+$ cd projects/
+$mkdir skeleton
+cd skeleton
+mkdir bin NAME tests docs
