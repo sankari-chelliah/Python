@@ -15,6 +15,14 @@ $pip3.9 install nose
 # 5.creating the skeleton project directory
 $ mkdir projects
 $ cd projects/
-$mkdir skeleton
-cd skeleton
-mkdir bin NAME tests docs
+$ mkdir skeleton
+$ cd skeleton
+$ mkdir bin NAME tests docs
+
+# 6. Set up some initial files
+$ touch NAME/__init__.py
+$ touch tests/__init__.py
+
+# 7. Inside skeleton create setup.py
+
+# 8. create a simple file tests/NAME_tests.py
