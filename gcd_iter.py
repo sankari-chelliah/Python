@@ -4,16 +4,19 @@ def gcdIter(a, b):
         Output: gcd of a and b (int)'''
 
     c = min(a,b)
-    while c >= 1:
-        if c == 1:
-            return c
-            break
-        else:
-            if a%c==0 and b%c==0:
+    if c == 0:
+        return max(a,b)  #GCD of (0,b) is b
+    else:
+        while c >= 1:
+            if c == 1:
                 return c
                 break
             else:
-                c -= 1
+                if a%c==0 and b%c==0:
+                    return c
+                    break
+                else:
+                    c -= 1
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
 print(f"The greatest common factor of {x} and {y} is {gcdIter(x,y)}")
